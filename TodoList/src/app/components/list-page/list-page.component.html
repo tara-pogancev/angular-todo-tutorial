@@ -1,0 +1,19 @@
+<div
+  class="is-flex is-flex-direction-column auto-margin has-text-centered max-width-800"
+>
+  <h1>My ToDo List:</h1>
+  <div class="my-3">
+    <input
+      class="input"
+      type="text"
+      placeholder="New TODO Item..."
+      [(ngModel)]="newTodo"
+      (keydown)="addNew($event)"
+    />
+  </div>
+  <p *ngIf="todoList.length == 0">No items in list yet.</p>
+  <app-list-item
+    *ngFor="let item of todoList"
+    [listItem]="item"
+  ></app-list-item>
+</div>

@@ -1,0 +1,20 @@
+.todo-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: rgb(141, 221, 194);
+  padding: 20px;
+  border-radius: 20px;
+  transition: all 0.3s;
+
+  border: transparent 3px solid;
+
+  &:hover {
+    cursor: pointer;
+    border: rgb(137, 179, 137) 3px solid;
+  }
+}
+
+.checked {
+  background-color: rgb(160, 173, 169);
+  text-decoration: line-through;
+}
