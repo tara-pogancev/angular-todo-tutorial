@@ -5,11 +5,10 @@
   padding: 20px;
   border-radius: 20px;
   transition: all 0.3s;
-
+  cursor: pointer;
   border: transparent 3px solid;
 
   &:hover {
-    cursor: pointer;
     border: rgb(137, 179, 137) 3px solid;
   }
 }
